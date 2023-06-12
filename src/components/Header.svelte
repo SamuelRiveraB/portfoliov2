@@ -3,25 +3,16 @@
 </script>
 
 <style lang="scss">
-    .header {
-        display: flex;
-        position: fixed;
-        width: 100%;
-        height: 50px;
-        top: 0;
-        left: 0;
-        border: none !important;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
-        border-bottom: 1px solid #ccc;
-        -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-        -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-        z-index: 10;
-    }
+
 </style>
 
-<header class="header">
-    <Socials />
+<header class="flex fixed w-full h-[50px] justify-center items-center shadow bg-white z-50">
+    <div class="absolute">
+        <Socials/>
+    </div>
+    <div class="flex mx-auto items-center w-full max-w-[1400px] p-2 tablet:p-10">
+        <a href="/">
+            <h2 class="cursor-pointer text-bold text-left text-[30px]">Samuel<span class="text-purple-500">.</span></h2>
+        </a>
+    </div>
 </header>

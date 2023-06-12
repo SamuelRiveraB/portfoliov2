@@ -1,7 +1,7 @@
-<script>
-    import dev from '../assets/images/dev.png';
-    import linkedin from '../assets/images/linkedin.png';
-    import github from '../assets/images/github.png';
+<script lang="ts">
+    import linkedin from '../assets/images/linkedin.png'
+    import github from '../assets/images/github.png'
+    import arrow from "../assets/images/arrow.png"
 </script>
   
 <style lang="scss">
@@ -36,13 +36,6 @@
         box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.1);
     }
 
-    .logo-img {
-        position: relative;
-        top: 5px;
-        width: 100%;
-        transition: all 0.1s;
-    }
-
     .container {
         z-index: -1;
         width: 100%;
@@ -54,28 +47,56 @@
         background-color: transparent;
         visibility: hidden;
     }
+
     .cont-img {
         width: 40px;
-        margin: 0 10px;
         cursor: pointer;
+        filter: grayscale(100%) brightness(0);
     }
 
-    .socials:hover .logo-img, .socials:focus .logo-img {
+    .socials:hover .logo-img {
         visibility: hidden;
     }
 
-    .socials:hover .container, .socials:focus .container {
+    .socials:hover .container {
         z-index: 2;
         visibility: visible;
     }
+
+    .cont-img:hover {
+        filter: none;
+    }
+
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .arrow {
+        animation: moveUpDown 5s ease-in-out infinite;
+    }
 </style>
 
-<button class="socials">
-    <div class="logo">
-        <img class="logo-img" src={dev} alt="dev"/>
-    </div>
-    <div class="container">
-        <img class="cont-img" src={linkedin} alt="dev"/>
-        <img class="cont-img" src={github} alt="dev"/>
-    </div>
-</button>
+<main>
+    <button class="socials">
+        <div class="logo">
+            <h2 class="logo-img mt-2 text-bold text-left text-[60px]">S<span class="text-purple-500">.</span></h2>
+        </div>
+        <div class="container gap-2">
+            <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank" rel="noopener noreferrer">
+                <img class="cont-img" src={linkedin} alt="linkedin" />
+            </a>
+            <a href="https://github.com/SamuelRiveraB" target="_blank" rel="noopener noreferrer">
+                <img class="cont-img" src={github} alt="github" />
+            </a>
+        </div>
+    </button>
+    <img src={arrow} alt="arrow" class="arrow absolute w-16 top-8 left-full">
+</main>
