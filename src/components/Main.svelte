@@ -38,7 +38,7 @@
                         Resume <Check class="inline-block mb-1"/>
                     </button>
                 </a>
-                <button class="text-bold hover:underline" on:click={scrollToSection}>Contact</button>
+                <button class="font-bold hover:underline" on:click={scrollToSection}>Contact</button>
             </div>
         </div>
     </div>
@@ -159,7 +159,7 @@
                         <div class="flex flex-col ml-6 gap-4">
                             <p class="text-gray-500 text-1xl">June 2022 - Present</p>
                             <h3 class="text-3xl font-semibold">LAB SATOSHI, Medellín, Colombia</h3>
-                            <p class="text-2xl text-gray-500 text-justify">Tasked with the development and maintenance of a responsive and visually appealing website.
+                            <p class="text-2xl text-gray-500 laptop:text-justify">Tasked with the development and maintenance of a responsive and visually appealing website.
                                 I also served as a QA Analyst in charge of the execution of periodical and comprehensive testing of client-side
                                 applications, ensuring they meet functional requirements, quality standards, and user expectations.
                             </p>
@@ -170,7 +170,7 @@
                         <div class="flex flex-col ml-6 gap-4">
                             <p class="text-gray-500 text-1xl">August 2021 - February 2022</p>
                             <h3 class="text-3xl font-semibold">CLOWSYSTEMS, Medellín, Colombia</h3>
-                            <p class="text-2xl text-gray-500 text-justify">Participated in the development and maintenance of various responsive and user-friendly
+                            <p class="text-2xl text-gray-500 laptop:text-justify">Participated in the development and maintenance of various responsive and user-friendly
                                 web applications, ensuring the writing of clean, efficient, and well-structured code for front-end development 
                                 projects.
                             </p>
@@ -181,7 +181,7 @@
                         <div class="flex flex-col ml-6 gap-4">
                             <p class="text-gray-500 text-1xl">January 2021 - June 2021</p>
                             <h3 class="text-3xl font-semibold">METRO DE MEDELLÍN LTDA, Medellín, Colombia</h3>
-                            <p class="text-2xl text-gray-500 text-justify">Tasked with the development of a visually appealing and user-friendly web application for visualizing and
+                            <p class="text-2xl text-gray-500 laptop:text-justify">Tasked with the development of a visually appealing and user-friendly web application for visualizing and
                                 managing a Database and a set of business information through writing of high-quality code based on specific 
                                 design specifications, ensuring the successful implementation of required features and functionalities.</p>
                         </div>

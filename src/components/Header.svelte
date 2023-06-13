@@ -12,7 +12,7 @@
     </div>
     <div class="flex mx-auto items-center w-full max-w-[1400px] p-2 tablet:p-10">
         <a href="/">
-            <h2 class="cursor-pointer text-bold text-left text-[30px]">Samuel<span class="text-purple-500">.</span></h2>
+            <h2 class="cursor-pointer font-bold text-left text-[30px]">Samuel<span class="text-purple-500">.</span></h2>
         </a>
     </div>
 </header>

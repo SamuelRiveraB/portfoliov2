@@ -87,7 +87,7 @@
 <main>
     <button class="socials">
         <div class="logo">
-            <h2 class="logo-img mt-2 text-bold text-left text-[60px]">S<span class="text-purple-500">.</span></h2>
+            <h2 class="logo-img mt-2 font-bold text-left text-[60px]">S<span class="text-purple-500">.</span></h2>
         </div>
         <div class="container gap-2">
             <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank" rel="noopener noreferrer">
