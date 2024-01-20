@@ -5,6 +5,7 @@
     import blogr from "../assets/images/projects/blogr.png"
     import dinastia from "../assets/images/projects/dinastia.png"
     import loopstudios from "../assets/images/projects/loopstudios.png"
+    import pongalong from "../assets/images/projects/pongalong.png"
     import space from "../assets/images/projects/space.png"
     import sunnyside from "../assets/images/projects/sunnyside.png"
     import wnews from "../assets/images/projects/w-news.png"
@@ -35,7 +36,7 @@
             <div class="flex max-laptop:justify-center w-full items-center mx-auto gap-5 my-10">
                 <a href={cv} target="_blank">
                     <button class="items-center bg-black text-white p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-black hover:bg-white hover:text-black">
-                        Resume <Check class="inline-block mb-1"/>
+                        Resumé <Check class="inline-block mb-1"/>
                     </button>
                 </a>
                 <button class="font-bold hover:underline" on:click={scrollToSection}>Contact</button>
@@ -49,7 +50,7 @@
             <div class="laptop:w-1/2">
                 <h2 class="text-6xl text-center laptop:text-justify font-bold mb-10">About Me</h2>
                 <p class="text-center laptop:text-justify my-4 text-2xl">Hello, my name is Samuel Rivera, a Full-Stack web developer 
-                    with a passion for transforming ideas into functional and visually appealing websites. With about 2 years of 
+                    with a passion for transforming ideas into functional and visually appealing websites. With about 3 years of 
                     experience, I have the unique ability to work with both the front-end and back-end aspects of web development. 
                     From crafting visually appealing and interactive user interfaces to designing and implementing robust server-side
                     logic, I am well-versed in the entire web development stack.<br><br>
@@ -107,36 +108,49 @@
         <div class="flex flex-col">
             <h2 class="text-6xl text-center font-bold mb-10">Projects</h2>
             <div class="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 gap-6">
+                
+                <a href="https://samuelriverab.github.io/pongalong/" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
+                        <img src={pongalong} alt="pongalong" class="w-auto h-40 mr-auto ml-auto">
+                        <h3 class="text-2xl mt-4 text-right">Bad UIs - Pongalong</h3>
+                    </div>
+                </a>
+
                 <a href="http://stake-project.s3-website-us-east-1.amazonaws.com/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
                         <img src={dinastia} alt="dinastia" class="w-full h-auto">
                         <h3 class="text-2xl mt-4 text-right">Dinastía</h3>
                     </div>
                 </a>
+
                 <a href="https://samuelriverab.github.io/sunnyside/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
                         <img src={sunnyside} alt="sunnyside" class="w-full h-auto">
                         <h3 class="text-2xl mt-4 text-right">Sunnyside</h3>
                     </div>
                 </a>
+
                 <a href="https://samuelriverab.github.io/blogr/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
                         <img src={blogr} alt="blogr" class="w-full h-auto">
                         <h3 class="text-2xl mt-4 text-right">Blogr</h3>
                     </div>
                 </a>
+
                 <a href="https://samuelriverab.github.io/loopstudios/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
                         <img src={loopstudios} alt="loopstudios" class="w-full h-auto">
                         <h3 class="text-2xl mt-4 text-right">Loopstudios</h3>
                     </div>
                 </a>
+
                 <a href="https://samuelriverab.github.io/w-news/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
                         <img src={wnews} alt="w-news" class="w-full h-auto">
                         <h3 class="text-2xl mt-4 text-right">W-News</h3>
                     </div>
                 </a>
+
                 <a href="https://samuelriverab.github.io/space/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
                         <img src={space} alt="space" class="w-full h-auto">
@@ -157,7 +171,7 @@
                     <div class="flex flex-col">
                         <div class="absolute mt-1 h-4 w-4 rounded-full bg-gray-500"></div>
                         <div class="flex flex-col ml-6 gap-4">
-                            <p class="text-gray-500 text-1xl">June 2022 - Present</p>
+                            <p class="text-gray-500 text-1xl">June 2022 - November 2023</p>
                             <h3 class="text-3xl font-semibold">LAB SATOSHI, Medellín, Colombia</h3>
                             <p class="text-2xl text-gray-500 laptop:text-justify">Tasked with the development and maintenance of a responsive and visually appealing website.
                                 I also served as a QA Analyst in charge of the execution of periodical and comprehensive testing of client-side
@@ -204,7 +218,7 @@
                 <p class="text-center laptop:text-justify my-4 text-2xl">If you have any inquiries or would like to discuss a potential collaboration,
                     please feel free to reach out to me. You can contact me via email or phone using the details provided below: <br><br>
                     Email: samuelrivba@gmail.com <br>
-                    Phone: +57 3115235240 <br><br>
+                    LinkedIn: <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank">Samuel Rivera Barrientos</a><br><br>
                     
                     I look forward to hearing from you and will respond to your message as soon as possible. Thank you for your interest!
                 </p>
