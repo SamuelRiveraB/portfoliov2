@@ -111,49 +111,49 @@
                 
                 <a href="https://samuelriverab.github.io/pongalong/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
-                        <img src={pongalong} alt="pongalong" class="w-auto h-40 mr-auto ml-auto">
+                        <img src={pongalong} alt="pongalong" class="w-auto h-60 mr-auto ml-auto">
                         <h3 class="text-2xl mt-4 text-right">Bad UIs - Pongalong</h3>
                     </div>
                 </a>
 
                 <a href="http://stake-project.s3-website-us-east-1.amazonaws.com/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
-                        <img src={dinastia} alt="dinastia" class="w-full h-auto">
+                        <img src={dinastia} alt="dinastia" class="w-auto h-60 mr-auto ml-auto">
                         <h3 class="text-2xl mt-4 text-right">Dinastía</h3>
                     </div>
                 </a>
 
                 <a href="https://samuelriverab.github.io/sunnyside/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
-                        <img src={sunnyside} alt="sunnyside" class="w-full h-auto">
+                        <img src={sunnyside} alt="sunnyside" class="w-auto h-60 mr-auto ml-auto">
                         <h3 class="text-2xl mt-4 text-right">Sunnyside</h3>
                     </div>
                 </a>
 
                 <a href="https://samuelriverab.github.io/blogr/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
-                        <img src={blogr} alt="blogr" class="w-full h-auto">
+                        <img src={blogr} alt="blogr" class="w-auto h-60 mr-auto ml-auto">
                         <h3 class="text-2xl mt-4 text-right">Blogr</h3>
                     </div>
                 </a>
 
                 <a href="https://samuelriverab.github.io/loopstudios/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
-                        <img src={loopstudios} alt="loopstudios" class="w-full h-auto">
+                        <img src={loopstudios} alt="loopstudios" class="w-auto h-60 mr-auto ml-auto">
                         <h3 class="text-2xl mt-4 text-right">Loopstudios</h3>
                     </div>
                 </a>
 
                 <a href="https://samuelriverab.github.io/w-news/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
-                        <img src={wnews} alt="w-news" class="w-full h-auto">
+                        <img src={wnews} alt="w-news" class="w-auto h-60 mr-auto ml-auto">
                         <h3 class="text-2xl mt-4 text-right">W-News</h3>
                     </div>
                 </a>
 
                 <a href="https://samuelriverab.github.io/space/" target="_blank" rel="noopener noreferrer">
                     <div class="bg-gray-100 p-4 shadow rounded hover:bg-gray-300 cursor-pointer">
-                        <img src={space} alt="space" class="w-full h-auto">
+                        <img src={space} alt="space" class="w-auto h-60 mr-auto ml-auto">
                         <h3 class="text-2xl mt-4 text-right">Space</h3>
                     </div>
                 </a>
