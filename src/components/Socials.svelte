@@ -2,6 +2,7 @@
     import linkedin from '../assets/images/linkedin.png'
     import github from '../assets/images/github.png'
     import arrow from "../assets/images/arrow.png"
+    import logo from "../assets/images/logo2.png"
 </script>
   
 <style lang="scss">
@@ -85,9 +86,9 @@
 </style>
 
 <main>
-    <button class="socials">
+    <button class="socials hover:hidden">
         <div class="logo">
-            <h2 class="logo-img mt-2 font-bold text-left text-[60px]">S<span class="text-purple-500">.</span></h2>
+            <img src={logo} alt="Socials logo" class="h-[70px] mt-5">
         </div>
         <div class="container gap-2">
             <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank" rel="noopener noreferrer">
