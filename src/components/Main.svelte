@@ -120,7 +120,7 @@
     </div>
 
     <!--Projects-->
-    <div class="flex flex-col items-center justify-between p-20 w-[100vw] bg-myGreen">
+    <div class="flex flex-col items-center justify-between p-10 laptop:p-20 w-[100vw] bg-myGreen">
         <div class="max-w-[1140px] w-full">
             <h2 class="text-6xl text-center font-bold mb-10 text-white">Projects</h2>
             <div class="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6">
@@ -194,8 +194,8 @@
     </div>
 
     <!--Experience-->
-    <div class="items-center w-full p-10 pb-20 laptop:p-20">
-        <div class="flex flex-col">
+    <div class="flex flex-col items-center justify-between p-10 laptop:p-20 w-[100vw]">
+        <div class="max-w-[1140px] w-full">
             <h2 class="text-6xl text-center font-bold mb-10">Experience</h2>
             <div class="relative">
                 <div class="flex flex-col space-y-5">
