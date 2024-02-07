@@ -11,6 +11,8 @@
     import wnews from "../assets/images/projects/w-news.png"
     import contact from "../assets/images/contact.png"
     import Check from "svelte-material-icons/OpenInNew.svelte";
+    import linkedin from '../assets/images/linkedin.png'
+    import github from '../assets/images/github.png'
 
     function scrollToSection() {
         const section = document.querySelector('#contact-beacon');
@@ -19,90 +21,73 @@
 </script>
 
 <style lang="scss">
-    
+
 </style>
 
-<main class="flex flex-col justify-center text-black w-full mx-auto max-w-[1400px]">
+<main class="flex flex-col justify-center text-black w-full mx-auto">
     <!--banner-->
-    <div class="flex flex-col laptop:flex-row items-center justify-between p-10 mt-10">
-        <div class="laptop:w-1/2">
-            <img src={banner} alt="banner" class="mx-auto">
-        </div>
-        <div class="laptop:w-1/2">
-            <h2 class="text-6xl text-center laptop:text-left font-bold my-10">Bringing Designs To Life With Seamless Functionality.</h2>
-            <p class="text-center laptop:text-justify my-4 text-2xl">As a skilled Full-Stack developer, I craft responsive, innovative and 
-                user-friendly applications. Explore my latest projects or download my CV here.
-            </p>
-            <div class="flex max-laptop:justify-center w-full items-center mx-auto gap-5 my-10">
-                <a href={cv} target="_blank">
-                    <button class="items-center bg-black text-white p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-black hover:bg-white hover:text-black">
-                        Resumé <Check class="inline-block mb-1"/>
-                    </button>
-                </a>
-                <button class="font-bold hover:underline" on:click={scrollToSection}>Contact</button>
+    <div class="flex justify-center items-center h-[100vh] laptop:p-10">
+        <div class="w-full h-full  flex flex-col laptop:flex-row items-center justify-center">
+            <div class="">
+                <h2 class="text-5xl text-center laptop:text-left font-bold my-10">Hi, my name is <span class="text-myGreen">Samuel</span></h2>
+                <p class="text-center laptop:text-justify my-4 text-2xl">I'm a Full Stack Web Developer based in Medellín, Colombia.
+                </p>
+                <div class="flex max-laptop:justify-center w-full items-center mx-auto gap-5 my-10">
+                    <a href={cv} target="_blank">
+                        <button class="items-center bg-black text-white p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-black hover:bg-white hover:text-black">
+                            Resumé <Check class="inline-block mb-1"/>
+                        </button>
+                    </a>
+                    <button class="font-bold hover:underline" on:click={scrollToSection}>Contact</button>
+                </div>
+            </div>
+            <div class="">
+                <img src={about} alt="img" class="mx-auto">
             </div>
         </div>
     </div>
 
     <!--About-->
-    <div class="flex flex-col items-center justify-between p-10 mx-auto">
+    <div class="flex flex-col items-center justify-between p-10 mx-auto bg-myGreen w-full py-20">
         <div class="flex flex-col laptop:flex-row items-center justify-between">
-            <div class="laptop:w-1/2">
-                <h2 class="text-6xl text-center laptop:text-justify font-bold mb-10">About Me</h2>
-                <p class="text-center laptop:text-justify my-4 text-2xl">Hello, my name is Samuel Rivera, a Full-Stack web developer 
-                    with a passion for transforming ideas into functional and visually appealing websites. With about 3 years of 
-                    experience, I have the unique ability to work with both the front-end and back-end aspects of web development. 
-                    From crafting visually appealing and interactive user interfaces to designing and implementing robust server-side
-                    logic, I am well-versed in the entire web development stack.<br><br>
-                    Being a full stack developer enables me to take a holistic approach to projects, seamlessly integrating front-end
-                    and back-end components to deliver cohesive and functional web applications. I pride myself on my ability to handle
-                    both client-side and server-side challenges, providing end-to-end solutions that meet the needs of users and clients
-                    alike.<br><br>
-                    I specialize in creating user-friendly interfaces and ensuring responsive experiences across devices. Whether it's
-                    crafting clean and efficient code, integrating frameworks like React and Svelte, or working with Back-end technologies
-                    such as Node.js and databases like MongoDB, I bring my commitment to deliver high-quality solutions. I am thrilled at the
-                    opportunity to work with you and be part of your team.
-                </p>
-            </div>
-            <div class="laptop:w-1/2">
-                <img src={about} alt="img" class="mx-auto">
-            </div>
-        </div>
-        <div class="flex flex-col laptop:flex-row items-center mt-10">
-            <div class="laptop:w-1/2 mt-10 laptop:mr-10">
-                <h2 class="text-6xl text-center laptop:text-left font-bold mb-10">Skills</h2>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">HTML5</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">CSS3</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">SASS</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">JavaScript</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">TypeScript</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">Node JS</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">Express</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">React</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">Svelte</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">Bootstrap</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">Tailwind CSS</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">Git/GitHub</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">PostgreSQL</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">MongoDB</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">Heroku</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">AWS S3</p>
-                <p class="text-center text-2xl bg-black rounded-full cursor-pointer text-white inline-block w-auto px-4 my-1 border-2 border-black hover:bg-white hover:text-black">AWS Elastic Beanstalk</p>                                                 
-            </div>
-            <div class="w-full laptop:w-1/2 pb-10 mt-10">
-                <h2 class="text-6xl text-center laptop:text-left font-bold mb-10">Languages</h2>
-                <p class="text-2xl my-2">Spanish</p>
-                <div class="relative w-full h-5 bg-gray-200 rounded-full">
-                    <div class="absolute top-0 left-0 h-full bg-black rounded-full w-full"></div>
-                </div>
-                <p class="text-2xl my-2">English</p>
-                <div class="relative w-full h-5 bg-gray-200 rounded-full">
-                    <div class="absolute top-0 left-0 h-full bg-black rounded-full w-[85%]"></div>
+            <div class="max-w-[1140px]">
+                <h2 class="text-6xl text-center font-bold mb-10 text-white">About Me</h2>
+                <div class="flex flex-col laptop:flex-row gap-10 items-center">
+                    <img src={about} alt="img" class="">
+                    <p class="text-center laptop:text-justify my-4 text-xl text-white">I'm a Full-Stack Developer 
+                        with a passion for transforming ideas into functional and visually appealing websites. I have a comprehensive grasp of both front-end and back-end development. I pride myself with my ability to learn things quickly and interest in enhancing my knowledge, and I'm certain that a can contribute effectively to any Web Development team.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Skills -->
+    <div class="flex flex-col items-center justify-between p-10 w-full">
+        <div class="max-w-[1140px]">
+            <h2 class="text-6xl text-center laptop:text-justify font-bold mb-10">Skills</h2>
+            <div class="flex flex-col laptop:flex-row w-full">
+                <div class="rounded-md shadow-md">
+                    <div class="bg-myGreen rounded-t-md text-white px-20 py-5">
+                        <h3 class="text-center">Front End</h3>
+                    </div>
+                    <div class="p-2">
+                        <p>HTML</p>
+                    </div>
+                </div>
+
+                <div class="rounded-md shadow-md">
+                    <div class="bg-myGreen rounded-t-md text-white px-20 py-5">
+                        <h3 class="text-center">Front End</h3>
+                    </div>
+                    <div class="p-2">
+                        <p>HTML</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!--Projects-->
     <div class="items-center w-full p-10">
         <div class="flex flex-col">

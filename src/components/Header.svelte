@@ -8,12 +8,18 @@
 </style>
 
 <header class="flex fixed w-full h-[50px] justify-center items-center shadow bg-white z-50">
-    <div class="absolute">
+    <!-- <div class="absolute">
         <Socials/>
-    </div>
-    <div class="flex mx-auto items-center w-full max-w-[1400px] p-2 tablet:p-10">
+    </div> -->
+    <div class="flex mx-auto items-center justify-between w-full max-w-[1400px] p-2 tablet:p-10">
         <a href="/">
             <img src={logo} alt="Header logo" class="h-7">
         </a>
+        <ul class="hidden tablet:flex gap-10 font-bold">
+            <li class="cursor-pointer"><a href="/">About</a></li>
+            <li class="cursor-pointer">Skills</li>
+            <li class="cursor-pointer">Projects</li>
+            <li class="cursor-pointer">Contact</li>
+        </ul>
     </div>
 </header>
