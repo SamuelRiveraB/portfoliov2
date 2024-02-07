@@ -63,28 +63,55 @@
     </div>
 
     <!-- Skills -->
-    <div class="flex flex-col items-center justify-between p-10 w-full">
-        <div class="max-w-[1140px]">
-            <h2 class="text-6xl text-center laptop:text-justify font-bold mb-10">Skills</h2>
-            <div class="flex flex-col laptop:flex-row w-full">
-                <div class="rounded-md shadow-md">
-                    <div class="bg-myGreen rounded-t-md text-white px-20 py-5">
+    <div class="flex flex-col items-center justify-between p-20 w-[100vw]">
+        <div class="max-w-[1140px] w-full">
+            <h2 class="text-6xl text-center font-bold mb-10">Skills</h2>
+            <div class="flex flex-col laptop:flex-row gap-10 justify-center">
+                <div class="rounded-md shadow-md grow">
+                    <div class="bg-myGreen rounded-t-md text-white px-20 py-5 text-2xl">
                         <h3 class="text-center">Front End</h3>
                     </div>
-                    <div class="p-2">
-                        <p>HTML</p>
+                    <div class="flex flex-col gap-5 p-10 text-xl text-center">
+                        <p>HTML5</p>
+                        <p>CSS3</p>
+                        <p>SASS</p>
+                        <p>Javascript</p>
+                        <p>Typescript</p>
+                        <p>React</p>
+                        <p>NextJS</p>
+                        <p>Svelte</p>
+                        <p>TailwindCSS</p>
+                        <p>Bootstrap</p>
                     </div>
                 </div>
 
-                <div class="rounded-md shadow-md">
-                    <div class="bg-myGreen rounded-t-md text-white px-20 py-5">
-                        <h3 class="text-center">Front End</h3>
+                <div class="rounded-md shadow-md grow">
+                    <div class="bg-myGreen rounded-t-md text-white px-20 py-5 text-2xl">
+                        <h3 class="text-center">Back End</h3>
                     </div>
-                    <div class="p-2">
-                        <p>HTML</p>
+                    <div class="flex flex-col gap-5 p-10 text-xl text-center">
+                        <p>NodeJS</p>
+                        <p>Express</p>
+                        <p>Postgres</p>
+                        <p>MongoDB</p>
+                        <p>Restful APIs</p>
+                        <p>Python</p>
                     </div>
                 </div>
 
+                <div class="rounded-md shadow-md grow">
+                    <div class="bg-myGreen rounded-t-md text-white px-20 py-5 text-2xl">
+                        <h3 class="text-center">Other</h3>
+                    </div>
+                    <div class="flex flex-col gap-5 p-10 text-xl text-center">
+                        <p>Git</p>
+                        <p>Github</p>
+                        <p>Vercel</p>
+                        <p>SCRUM</p>
+                        <p>VSCode</p>
+                        <p>AWS</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
