@@ -13,14 +13,16 @@
     import linkedin from '../assets/images/linkedin.png'
     import github from '../assets/images/github.png'
 
-    function scrollToSection() {
-        const section = document.querySelector('#contact');
+    function scrollToSection(id: string) {
+        const section = document.querySelector(id);
         section.scrollIntoView({ behavior: 'smooth' });
     }
 </script>
 
 <style lang="scss">
-
+    :global(html) {
+        scroll-behavior: smooth;
+    }
 </style>
 
 <main class="flex flex-col justify-center text-black w-full mx-auto">
@@ -37,7 +39,7 @@
                             Resumé <Check class="inline-block mb-1"/>
                         </button>
                     </a>
-                    <button class="font-bold hover:text-myGreen" on:click={scrollToSection}>Contact</button>
+                    <button class="font-bold hover:text-myGreen" on:click={()=>scrollToSection('#contact')}>Contact</button>
                 </div>
             </div>
             <div class="relative w-[40%] laptop:w-[30%]">
@@ -50,6 +52,7 @@
     </div>
 
     <!--About-->
+    <div id="about"></div>
     <div class="flex flex-col items-center justify-between p-20 mx-auto bg-myGreen w-full py-20">
         <div class="flex flex-col laptop:flex-row items-center justify-between">
             <div class="max-w-[1140px]">
@@ -66,6 +69,7 @@
     </div>
 
     <!-- Skills -->
+    <div id="skills"></div>
     <div class="flex flex-col items-center justify-between p-20 w-[100vw]">
         <div class="max-w-[1140px] w-full">
             <h2 class="text-6xl text-center font-bold mb-10">Skills</h2>
@@ -120,6 +124,7 @@
     </div>
 
     <!--Projects-->
+    <div id="projects"></div>
     <div class="flex flex-col items-center justify-between p-10 laptop:p-20 w-[100vw] bg-myGreen">
         <div class="max-w-[1140px] w-full">
             <h2 class="text-6xl text-center font-bold mb-10 text-white">Projects</h2>

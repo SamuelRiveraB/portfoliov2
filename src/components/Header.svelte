@@ -1,6 +1,8 @@
 <script lang="ts">
     import Socials from './Socials.svelte';
     import logo from "../assets/images/logo.png"
+
+
 </script>
 
 <style lang="scss">
@@ -16,10 +18,10 @@
             <img src={logo} alt="Header logo" class="h-7">
         </a>
         <ul class="hidden tablet:flex gap-10 font-bold">
-            <li class="cursor-pointer hover:text-myGreen"><a href="/">About</a></li>
-            <li class="cursor-pointer hover:text-myGreen">Skills</li>
-            <li class="cursor-pointer hover:text-myGreen">Projects</li>
-            <li class="cursor-pointer hover:text-myGreen">Contact</li>
+            <li class="cursor-pointer hover:text-myGreen"><a href="#about" data-te-smooth-scroll-init class="scroll-smooth">About</a></li>
+            <li class="cursor-pointer hover:text-myGreen"><a href="#skills" class="scroll-smooth">Skills</a></li>
+            <li class="cursor-pointer hover:text-myGreen"><a href="#projects" class="scroll-smooth">Projects</a></li>
+            <li class="cursor-pointer hover:text-myGreen"><a href="#contact" data-te-smooth-scroll-init>Contact</a></li>
         </ul>
     </div>
 </header>
