@@ -1,7 +1,7 @@
 <script lang="ts">
-    import banner from "../assets/images/banner.png"
+    import banner from "../assets/images/banner_photo.png"
     import cv from "../assets/docs/CV - Samuel Rivera.pdf"
-    import about from "../assets/images/about.png"
+    import about from "../assets/images/about_photo.png"
     import blogr from "../assets/images/projects/blogr.png"
     import dinastia from "../assets/images/projects/dinastia.png"
     import loopstudios from "../assets/images/projects/loopstudios.png"
@@ -9,13 +9,12 @@
     import space from "../assets/images/projects/space.png"
     import sunnyside from "../assets/images/projects/sunnyside.png"
     import wnews from "../assets/images/projects/w-news.png"
-    import contact from "../assets/images/contact.png"
     import Check from "svelte-material-icons/OpenInNew.svelte";
     import linkedin from '../assets/images/linkedin.png'
     import github from '../assets/images/github.png'
 
     function scrollToSection() {
-        const section = document.querySelector('#contact-beacon');
+        const section = document.querySelector('#contact');
         section.scrollIntoView({ behavior: 'smooth' });
     }
 </script>
@@ -41,21 +40,24 @@
                     <button class="font-bold hover:underline" on:click={scrollToSection}>Contact</button>
                 </div>
             </div>
-            <div class="">
-                <img src={about} alt="img" class="mx-auto">
+            <div class="relative"><a  href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank"  rel="noopener noreferrer">
+                <img src={banner} alt="Banner" class="mx-auto w-[95%] laptop:w-[70%]">
+                <img src={linkedin} alt="Banner Linkedin" class="absolute w-[50px] bottom-1 right-0">
+            </a>
             </div>
         </div>
     </div>
 
     <!--About-->
-    <div class="flex flex-col items-center justify-between p-10 mx-auto bg-myGreen w-full py-20">
+    <div class="flex flex-col items-center justify-between p-20 mx-auto bg-myGreen w-full py-20">
         <div class="flex flex-col laptop:flex-row items-center justify-between">
             <div class="max-w-[1140px]">
                 <h2 class="text-6xl text-center font-bold mb-10 text-white">About Me</h2>
-                <div class="flex flex-col laptop:flex-row gap-10 items-center">
-                    <img src={about} alt="img" class="">
-                    <p class="text-center laptop:text-justify my-4 text-xl text-white">I'm a Full-Stack Developer 
-                        with a passion for transforming ideas into functional and visually appealing websites. I have a comprehensive grasp of both front-end and back-end development. I pride myself with my ability to learn things quickly and interest in enhancing my knowledge, and I'm certain that a can contribute effectively to any Web Development team.
+                <div class="flex flex-col laptop:flex-row items-center gap-10 laptop:gap-0">
+                    <div class="w-full flex justify-center items-center">
+                        <img src={about} alt="img" class="w-[50%] ">
+                    </div>
+                    <p class="text-center laptop:text-justify text-xl text-white w-full">I'm a Full-Stack Developer with a passion for transforming ideas into functional and visually appealing websites. I have a comprehensive grasp of both front-end and back-end development. I pride myself with my ability to learn things quickly and interest in enhancing my skillset, and I'm certain that a can contribute effectively to any Web Development team.
                     </p>
                 </div>
             </div>
@@ -115,10 +117,11 @@
             </div>
         </div>
     </div>
+
     <!--Projects-->
-    <div class="items-center w-full p-10">
+    <div class="items-center w-full p-10 bg-myGreen">
         <div class="flex flex-col">
-            <h2 class="text-6xl text-center font-bold mb-10">Projects</h2>
+            <h2 class="text-6xl text-center font-bold mb-10 text-white">Projects</h2>
             <div class="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 gap-6">
                 
                 <a href="https://samuelriverab.github.io/pongalong/" target="_blank" rel="noopener noreferrer">
@@ -175,7 +178,7 @@
     </div>
 
     <!--Experience-->
-    <div class="items-center w-full p-10">
+    <div class="items-center w-full p-10 laptop:p-20">
         <div class="flex flex-col">
             <h2 class="text-6xl text-center font-bold mb-10">Experience</h2>
             <div class="relative">
@@ -219,21 +222,34 @@
     </div>
 
     <!--Contact-->
-    <div class="items-center w-full p-10">
+    <div id="contact"></div>
+    <div class="items-center w-full p-10 bg-myGreen">
+        <h2 class="text-6xl text-center font-bold mb-10 text-white">Contact</h2>
         <div class="flex flex-col laptop:flex-row items-center">
-            <div class="laptop:w-1/2">
-                <img src={contact} alt="banner" class="mx-auto my-10">
-            </div>
-            
-            <div class="laptop:w-1/2">
-                <h2 id="contact-beacon" class="text-6xl text-center laptop:text-left font-bold mb-10">Contact</h2>
-                <p class="text-center laptop:text-justify my-4 text-2xl">If you have any inquiries or would like to discuss a potential collaboration,
-                    please feel free to reach out to me. You can contact me via email or phone using the details provided below: <br><br>
-                    Email: samuelrivba@gmail.com <br>
-                    LinkedIn: <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank">Samuel Rivera Barrientos</a><br><br>
-                    
-                    I look forward to hearing from you and will respond to your message as soon as possible. Thank you for your interest!
-                </p>
+            <div class="flex flex-col laptop:flex-row gap-10 justify-center">
+                <a href="mailto:samuelrivba@gmail.com">
+                    <div class="rounded-md shadow-md grow bg-white flex items-center">
+                        <div class="rounded-md px-20 py-5 text-2xl">
+                            <h3 class="text-center">Email: samuelrivba@gmail.com</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank" rel="noopener noreferrer">
+                    <div class="rounded-md shadow-md grow bg-white flex items-center">
+                        <div class="rounded-md px-20 py-5 flex justify-center items-center">
+                            <img src={linkedin} alt="Linkedin" class="w-[50%] laptop:w-full">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank"  rel="noopener noreferrer">
+                    <div class="rounded-md shadow-md grow bg-white flex items-center">
+                        <div class="rounded-md px-20 py-5 flex justify-center items-center">
+                            <img src={github} alt="GitHub" class="w-[50%] laptop:w-full"/>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
