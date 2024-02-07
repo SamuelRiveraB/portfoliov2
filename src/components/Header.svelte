@@ -16,10 +16,10 @@
             <img src={logo} alt="Header logo" class="h-7">
         </a>
         <ul class="hidden tablet:flex gap-10 font-bold">
-            <li class="cursor-pointer"><a href="/">About</a></li>
-            <li class="cursor-pointer">Skills</li>
-            <li class="cursor-pointer">Projects</li>
-            <li class="cursor-pointer">Contact</li>
+            <li class="cursor-pointer hover:text-myGreen"><a href="/">About</a></li>
+            <li class="cursor-pointer hover:text-myGreen">Skills</li>
+            <li class="cursor-pointer hover:text-myGreen">Projects</li>
+            <li class="cursor-pointer hover:text-myGreen">Contact</li>
         </ul>
     </div>
 </header>

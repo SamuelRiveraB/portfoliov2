@@ -25,25 +25,26 @@
 
 <main class="flex flex-col justify-center text-black w-full mx-auto">
     <!--banner-->
-    <div class="flex justify-center items-center h-[100vh] laptop:p-10">
-        <div class="w-full h-full  flex flex-col laptop:flex-row items-center justify-center">
+    <div class="flex justify-center items-center h-[100vh] min-h-[700px] laptop:p-10">
+        <div class="w-full h-full flex flex-col-reverse laptop:flex-row items-center justify-center">
             <div class="">
                 <h2 class="text-5xl text-center laptop:text-left font-bold my-10">Hi, my name is <span class="text-myGreen">Samuel</span></h2>
                 <p class="text-center laptop:text-justify my-4 text-2xl">I'm a Full Stack Web Developer based in Medellín, Colombia.
                 </p>
                 <div class="flex max-laptop:justify-center w-full items-center mx-auto gap-5 my-10">
                     <a href={cv} target="_blank">
-                        <button class="items-center bg-black text-white p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-black hover:bg-white hover:text-black">
+                        <button class="transition items-center bg-black text-white p-2.5 px-6 rounded-lg text-lg font-semibold border-2 border-black hover:bg-white hover:text-black">
                             Resumé <Check class="inline-block mb-1"/>
                         </button>
                     </a>
-                    <button class="font-bold hover:underline" on:click={scrollToSection}>Contact</button>
+                    <button class="font-bold hover:text-myGreen" on:click={scrollToSection}>Contact</button>
                 </div>
             </div>
-            <div class="relative"><a  href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank"  rel="noopener noreferrer">
-                <img src={banner} alt="Banner" class="mx-auto w-[95%] laptop:w-[70%]">
-                <img src={linkedin} alt="Banner Linkedin" class="absolute w-[50px] bottom-1 right-0">
-            </a>
+            <div class="relative w-[40%] laptop:w-[30%]">
+                <a  href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank"  rel="noopener noreferrer">
+                    <img src={banner} alt="Banner" class="mx-auto w-full laptop:w-[70%]">
+                    <img src={linkedin} alt="Banner Linkedin" class="absolute w-[15%] bottom-1 right-5">
+                </a>
             </div>
         </div>
     </div>
@@ -178,7 +179,7 @@
     </div>
 
     <!--Experience-->
-    <div class="items-center w-full p-10 laptop:p-20">
+    <div class="items-center w-full p-10 pb-20 laptop:p-20">
         <div class="flex flex-col">
             <h2 class="text-6xl text-center font-bold mb-10">Experience</h2>
             <div class="relative">
@@ -223,33 +224,40 @@
 
     <!--Contact-->
     <div id="contact"></div>
-    <div class="items-center w-full p-10 bg-myGreen">
-        <h2 class="text-6xl text-center font-bold mb-10 text-white">Contact</h2>
-        <div class="flex flex-col laptop:flex-row items-center">
+    <div class="flex flex-col items-center justify-between p-10 laptop:p-20 w-[100vw] bg-myGreen">
+        <div class="max-w-[1140px] w-full">
+            <h2 class="text-6xl text-center font-bold mb-10 text-white">Contact</h2>
             <div class="flex flex-col laptop:flex-row gap-10 justify-center">
-                <a href="mailto:samuelrivba@gmail.com">
-                    <div class="rounded-md shadow-md grow bg-white flex items-center">
-                        <div class="rounded-md px-20 py-5 text-2xl">
-                            <h3 class="text-center">Email: samuelrivba@gmail.com</h3>
-                        </div>
-                    </div>
-                </a>
 
-                <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank" rel="noopener noreferrer">
-                    <div class="rounded-md shadow-md grow bg-white flex items-center">
-                        <div class="rounded-md px-20 py-5 flex justify-center items-center">
-                            <img src={linkedin} alt="Linkedin" class="w-[50%] laptop:w-full">
+                <div class="rounded-md shadow-md grow laptop:w-1/3 min-h-[110px]">
+                    <a href="mailto:samuelrivba@gmail.com">
+                        <div class="rounded-md shadow-md bg-white flex items-center h-full min-h-[110px]">
+                            <div class="rounded-md px-20 py-5 flex justify-center items-center text-xl w-full">
+                                <h3 class="text-center">Email: samuelrivba@gmail.com</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
 
-                <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank"  rel="noopener noreferrer">
-                    <div class="rounded-md shadow-md grow bg-white flex items-center">
-                        <div class="rounded-md px-20 py-5 flex justify-center items-center">
-                            <img src={github} alt="GitHub" class="w-[50%] laptop:w-full"/>
+                <div class="rounded-md shadow-md grow laptop:w-1/3">
+                    <a href="https://www.linkedin.com/in/samuel-rivera-barrientos-38b54317a/" target="_blank" rel="noopener noreferrer">
+                        <div class="rounded-md shadow-md grow bg-white flex items-center justify-center h-full">
+                            <div class="rounded-md px-20 py-5 flex justify-center items-center w-full">
+                                <img src={linkedin} alt="Linkedin" class="w-[70px]">
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+
+                <div class="rounded-md shadow-md grow laptop:w-1/3">
+                    <a href="https://github.com/SamuelRiveraB" target="_blank"  rel="noopener noreferrer">
+                        <div class="rounded-md shadow-md grow bg-white flex items-center justify-center h-full">
+                            <div class="rounded-md px-20 py-5 flex justify-center items-center w-full">
+                                <img src={github} alt="GitHub" class="w-[70px]"/>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
